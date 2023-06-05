@@ -1,5 +1,10 @@
-let currentResult = 0; // 초기값 설정
+const defaultResult = 0;
+let currentResult = defaultResult;
 
-currentResult = ((currentResult + 10) * 3) / 2 - 1; // 오른쪽 값을 왼쪽 값으로 할당한다.
+currentResult = (currentResult + 10) * 3 / 2 - 1;
 
-outputResult(currentResult, '');
+let calculationDescription = `( ${defaultResult} + 10) * 3) / 2 - 1`;
+let errorMessage = 'An error \n' + 
+                    'occurred!';
+
+outputResult(currentResult, calculationDescription);
